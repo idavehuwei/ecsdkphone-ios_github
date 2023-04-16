@@ -1,0 +1,16 @@
+{
+  "name": "rest-api-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server data.json  --routes routes.json --middlewares middlewares.js --port 60001",
+    "test": "..."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.9.4"
+  }
+}

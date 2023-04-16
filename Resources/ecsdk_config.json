@@ -1,0 +1,59 @@
+{
+    "version" : "1.0.0",
+    "video" : 0,
+    "eslib" : {
+        "vad": false,
+        "transType": "tls",
+        "natType": 0,
+        "mediaHasIoqueue": true,
+        "mediaClockRate": 16000,
+        "mediaQuality": 10,
+        "mediaEcOptions": 1,
+        "mediaEcTailLen": 200,
+        "mediaThreadCnt": 2,
+        "mediaTransportAddress": "",
+        "mediaTransportPort": 20000,
+        "natIceEnable": false,
+        "natTurnEnable": false,
+        "natRewriteUse": 1,
+        "contactRewriteUse": 1,
+        "viaRewriteUse": 1,
+        "srtpUse": 1,
+        "sndCloseTime": 0,
+        "registerHeart": 40,
+        "registerTimeout": 40,
+        "dtmfType": 2
+    },
+    
+    "esapi": {
+      "location": "http://localhost:60001/extRegister",
+      "deptList": "http://localhost:60001/extOrg",
+      "contactList": "http://localhost:60001/orgList",
+      "log": "http://localhost:60001/logSend",
+      "key": "1vF3r3Uo6al0u2OX",
+      "iv": "bfGuA9cL6i0aA9C2",
+      "timeout": 6000
+    },
+    
+    "payloadTypes": [{
+      "id": 0,
+      "name": "opus",
+      "clockrate": 48000,
+      "channels": 2,
+      "parameters": {
+        "fmtp": ["minptime=10; useinbandfec=1"]
+      }
+    }, {
+      "id": 0,
+      "name": "PCMU",
+      "clockrate": 8000
+    }, {
+      "id": 255,
+      "name": "PCMA",
+      "clockrate": 8000
+    },  {
+      "id": 0,
+      "name": "G729",
+      "clockrate": 8000
+    }]
+}
